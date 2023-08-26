@@ -1,0 +1,60 @@
+<div class="home-div">
+    <h2>Confira suas anotações:</h2>
+    <hr/>
+</div>
+
+<a href="{{URL}}/logout">
+    <button class="btn btn-warning">
+        Sair
+    </button>
+</a>
+
+<a href="#modal">
+    <button class="btn btn-primary" onclick="unbuildForm()">
+        Adicionar anotação 
+    </button>
+</a><br/><br/>
+
+{{status}}
+
+<div class="annotations">
+    <div class="flex-container">
+        {{cards}}
+    </div>
+</div>
+
+<div id="modal" class="modal">
+    <form method="POST">
+        <div class="modal-content">
+        <h1 id="modal-title">Crie sua anotação:</h1>
+    
+        <form action="" class="modal-container">
+            <input type="hidden" id="id" name="id" value="" />
+            <div class="modal-form-group">
+                <label for="">Cabeçalho da anotação:</label>
+                <input type="text" id="header" name="header" class="modal-form-control" placeholder="Digite o cabeçalho da anotação">
+            </div>
+
+            <div class="modal-form-group">
+                <label for="">Titulo da anotação:</label>
+                <input type="text" id="title" name="title" class="modal-form-control" placeholder="Digite o titulo da anotação">
+            </div>
+
+            <div class="modal-form-group">
+                <label for="">Digite a anotacao:</label>
+                <textarea class="modal-form-control" id="text" name="text" cols="40" rows="5" placeholder="Digite a anotação"></textarea>
+            </div>
+
+            <div class="modal-form-group">
+                <button type="submit" class="btn btn-dark">Enviar</button>
+            </div>
+        </form>
+    
+        <div class="modal-footer">
+            <a href="#" class="btn btn-dark"> Fechar </a>
+        </div>
+    
+        <a href="#" class="modal-close">&times;</a>
+        </div>
+    </form>
+</div>
