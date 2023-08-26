@@ -4,6 +4,7 @@
 <p>Necessario instalar laragon/xampp ou php >= 8.1</p>
 <p>Instalar docker e docker compose ou se estiver no windows o docker desktop</p>
 <p>Editar o arquivo .env e ajustar a env URL</p>
+<p>Editar o arquivo docker-compose.yml e ajustar os caminhos dos volumes conforme criado em sua maquina</p>
 
 Rodar o comando ```docker compose -f docker-compose.yml up -d ``` para subir o banco de dados
 
